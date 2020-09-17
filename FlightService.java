@@ -8,6 +8,7 @@ public class FlightService { // pobluc class to hold the flgiht service object v
 
 public CompletableFuture<Quote> getQuote(String site) {
     return CompletableFuture.supplyAsync(() -> {
+        System.out.println("Getting a quote from " + site); // method to print out quote from site
 
 
     });
