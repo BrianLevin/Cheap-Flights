@@ -8,5 +8,14 @@ public class CompletableFuturesDemo { // public class object which will hold the
         .collect(Collectors.toList()); // collects the methods and puts them in a list
 
     }
+
+
+
+    try { // try is hwere an erro can occur
+        Thread.sleep(10_000);
+      } catch (InterruptedException e) { // catch is where  to solve the error
+        e.printStackTrace();
+      }
     
+
 }
