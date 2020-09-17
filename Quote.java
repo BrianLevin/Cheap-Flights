@@ -14,4 +14,13 @@ public class Quote {
       public int getPrice() { // created getter to return the price data
         return price;
       }
+
+
+  @Override // override method from the super class and create a string in the sub class
+  public String toString() {
+    return "Quote{" +
+            "site='" + site + '\'' +
+            ", price=" + price +
+            '}';
+  }
 }
