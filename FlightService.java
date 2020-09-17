@@ -1,3 +1,8 @@
+import java.util.List; // import list method
+import java.util.Random; // import random method
+import java.util.concurrent.CompletableFuture; // import asyn method
+import java.util.stream.Stream; // import stream method
+
 public class FlightService { // pobluc class to hold the flgiht service object variables and methods
     public Stream<CompletableFuture<Quote>> getQuotes() { // created an async function which will take the stream api of the created array
         var sites = List.of("site1", "site2", "site3"); // List allows postional access of the array
