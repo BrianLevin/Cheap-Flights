@@ -7,4 +7,11 @@ public class Quote {
         this.price = price;
       }
 
+      public String getSite() { // created getter to returen the site data
+        return site;
+      }
+    
+      public int getPrice() { // created getter to return the price data
+        return price;
+      }
 }
