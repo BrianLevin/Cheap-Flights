@@ -6,4 +6,12 @@ public class FlightService { // pobluc class to hold the flgiht service object v
 
     }
 
+public CompletableFuture<Quote> getQuote(String site) {
+    return CompletableFuture.supplyAsync(() -> {
+
+
+    });
+
+
+}
 }
