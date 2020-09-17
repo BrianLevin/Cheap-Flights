@@ -10,9 +10,18 @@ public CompletableFuture<Quote> getQuote(String site) {
     return CompletableFuture.supplyAsync(() -> {
         System.out.println("Getting a quote from " + site); // method to print out quote from site
 
+        var random = new Random(); // random method
 
-    });
+
+        LongTask.simulate(1_000 + random.nextInt(2_000)); // a timed  simulated method to get the random Int Price
+
+        var price = 100 + random.nextInt(10); // variable to get the random quote.
 
 
-}
+ return new Quote(site, price); // return the new quote from the site and price variables
+    
+
+        });
+
+     }
 }
