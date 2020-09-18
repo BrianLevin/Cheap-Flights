@@ -20,11 +20,11 @@ public class FlightService { // pobluc class to hold the flgiht service object v
             LongTask.simulate(1_000 + random.nextInt(2_000)); // a timed simulated method to get the random Int Price between 1-2 seconds
 
              var price = 100 + random.nextInt(10); // variable to get the random quote.
-
+        
 
  return new Quote(site, price); // return the new quote from the site and price variables
     
-
+        
         });
 
      }
