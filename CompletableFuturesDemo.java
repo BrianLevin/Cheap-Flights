@@ -8,7 +8,7 @@ public class CompletableFuturesDemo { // public class object which will hold the
 
         var service = new FlightService(); // vairable to hold flight service object
         
-        var futures = service.getQuotes()// variable which will get the quotes from the flgiht service method
+        var futures = service.getQuotes()// variable which will get the  futrue quotes from the flgiht service method
         .map(future -> future.thenAccept(System.out::println)) // create new array and then pass the values  to print out the new quotes
         .collect(Collectors.toList()); // collects the methods and puts them in a list
 
